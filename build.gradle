@@ -1,0 +1,87 @@
+buildscript {
+    ext {
+        springBootVersion = '2.1.2.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.gonnect.deeplearning'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    flatDir { dirs "lib" }
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-devtools")
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compileOnly 'org.projectlombok:lombok'
+    compile name: 'h2o-genmodel'
+    compile("io.springfox:springfox-swagger2:2.8.0")
+    compile("io.springfox:springfox-swagger-ui:2.8.0")
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+//-------------------------------------------------------------------
+// Custom tasks for generating the model POJOs
+//-------------------------------------------------------------------
+
+task deleteTmp(type: Delete) {
+    delete "tmp"
+}
+
+task runScript(type: Exec, dependsOn: deleteTmp) {
+    if (project.hasProperty("usePython") && project.usePython == "true") {
+        commandLine "python3", "loan-approver-model.py"
+    } else {
+        commandLine "R", "-f", "loan-approver-model.R"
+    }
+}
+
+task placeGenModelJar(type: Copy, dependsOn: runScript) {
+    from "tmp/h2o-genmodel.jar"
+    into "lib"
+}
+
+task(placeBadLoanModel, dependsOn: placeGenModelJar) << {
+    String fileContents = new File("tmp/AtrociousLoanModel.java").text
+    File outf = new File ("src/main/java/com/gonnect/deeplearning/loanapprover/model/AtrociousLoanModel.java")
+    outf.write("package org.gradle;\n" + "\n" + fileContents)
+}
+
+task(placeInterestRateModel, dependsOn: placeGenModelJar) << {
+    String fileContents = new File("tmp/LoanInterestRateModel.java").text
+    File outf = new File ("src/main/java/com/gonnect/deeplearning/loanapprover/model/LoanInterestRateModel.java")
+    outf.write("package org.gradle;\n" + "\n" + fileContents)
+}
+
+task(generateModels, dependsOn: [placeBadLoanModel, placeInterestRateModel]) << {
+}
+
+compileJava.dependsOn generateModels
+
+
+//-------------------------------------------------------------------
+// Custom task for cleaning up generated files
+//-------------------------------------------------------------------
+
+task cleanGenerated(type: Delete) {
+    delete "tmp",
+            "lib/h2o-genmodel.jar",
+            "src/main/java/com/gonnect/deeplearning/loanapprover/model/AtrociousLoanModel.java",
+            "src/main/java/com/gonnect/deeplearning/loanapprover/model/LoanInterestRateModel.java"
+}
+
+clean.dependsOn cleanGenerated
