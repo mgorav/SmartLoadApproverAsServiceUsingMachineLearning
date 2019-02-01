@@ -50,7 +50,7 @@ Following picture shows flow of this smart loan approver application:
 | Atrocious Loan Model                         | Interest Rate Model                              |
 |----------------------------------------------|--------------------------------------------------|
 |**_Algorithm_**:      GBM                     |**_Algorithm_**:      GBM                         |
-|**_Model Category_**: Binary                  |**_Model Catelgory_**:      Regression            |
+|**_Model Category_**: Binary                  |**_Model Catelgory_**: Regression            |
 |                      Classification          |                                                  |
 |**_ntrees_**: 100                             |**_ntrees_**: 100                                 | 
 |**_max_depth_**: 5                            |**_max_depth_**: 5                                |
