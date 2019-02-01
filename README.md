@@ -82,8 +82,10 @@ Following picture shows flow of this smart loan approver application:
 - Build project
     ```
      ./gradlew build                    # Run R script (loan-approver-model.R) to generate POJOs
-     ./gradlew build -PusePython=true   # Run Python script (loan-approver-model.py) to generate POJOs
+     ./gradlew build -PpythonBasedMLModel=true   # Run Python script (loan-approver-model.py) to generate POJOs
     ```
+    
+    ![alt text](./modelgeneration.png)
     
 - Run Load Approver Spring Boot Application
 
@@ -133,6 +135,10 @@ Following picture shows flow of this smart loan approver application:
     ```
     curl http://192.168.1.20:54321/3/h2o-genmodel.jar > h2o-genmodel.jar
     ```
+- ML model can be visualized in H2o UI as shown below:
+![alt text](./h2o.png)
+
+
 
 
     

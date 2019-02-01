@@ -43,7 +43,7 @@ task deleteTmp(type: Delete) {
 }
 
 task runScript(type: Exec, dependsOn: deleteTmp) {
-    if (project.hasProperty("usePython") && project.usePython == "true") {
+    if (project.hasProperty("pythonBasedMLModel") && project.pythonBasedMLModel == "true") {
         commandLine "python3", "loan-approver-model.py"
     } else {
         commandLine "R", "-f", "loan-approver-model.R"
