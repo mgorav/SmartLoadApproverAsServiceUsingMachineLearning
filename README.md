@@ -80,13 +80,13 @@ Following picture shows flow of this smart loan approver application:
     Alternatively, Docker container can be launched as shown below:
         
         1. build docker image 
-            ```
+```
              docker build loanapprover .
-            ```
+```
         2. build docker image 
-            ```
+```
              docker run loanapprover 
-            ```
+```
 
 -  Swagger Definition of the Load Approver application
     ```
