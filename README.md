@@ -1,4 +1,4 @@
-# Smart Application - Loan Approver
+# Smart Application - Loan Approver Using Spring BOOT and ML
 
 Smart applications are those that learns from data. A Loan Approver is smart application which will use ML for loan approving. Learning from the data is achieved using two predictive model:
 
