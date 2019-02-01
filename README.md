@@ -85,7 +85,7 @@ Following picture shows flow of this smart loan approver application:
      ./gradlew build -PpythonBasedMLModel=true   # Run Python script (loan-approver-model.py) to generate POJOs
     ```
     
-    ![alt text](./modelgeneration.png)
+    ![alt text](./loanapprovermodelgeneration.png)
     
 - Run Load Approver Spring Boot Application
 
