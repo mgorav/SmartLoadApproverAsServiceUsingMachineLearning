@@ -81,7 +81,7 @@ Following picture shows flow of this smart loan approver application:
     ```
     http://localhost:8080/swagger-ui.html
     ```
-    ![alt text](./LoanApproverSwaggerAPI.png)
+    ![alt text](./SwaggerLoanApproverAPIs.png)
     
 #### Output
 ```
