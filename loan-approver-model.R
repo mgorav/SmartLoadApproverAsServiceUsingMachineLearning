@@ -21,7 +21,7 @@ model <- h2o.gbm(x = myX, y = myY,
                  training_frame = train, validation_frame = valid,
                  score_each_iteration = T,
                  ntrees = 100, max_depth = 5, learn_rate = 0.05,
-                 model_id = "BadLoanModel")
+                 model_id = "AtrociousLoanModel")
 print(model)
 
 # Download generated POJO for model
@@ -39,7 +39,7 @@ model <- h2o.gbm(x = myX, y = myY,
                  training_frame = train, validation_frame = valid,
                  score_each_iteration = T, 
                  ntrees = 100, max_depth = 5, learn_rate = 0.05,
-                 model_id = "InterestRateModel")
+                 model_id = "LoanInterestRateModel")
 print(model)
 
 # Download generated POJO for model

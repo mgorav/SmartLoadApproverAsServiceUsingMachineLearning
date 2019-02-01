@@ -19,7 +19,7 @@ loans_model = H2OGradientBoostingEstimator(score_each_iteration = True,
                                            ntrees = 100,
                                            max_depth = 5,
                                            learn_rate = 0.05,
-                                           model_id = "BadLoanModel")
+                                           model_id = "AtrociousLoanModel")
 loans_model.train(x = X, y = Y, training_frame = train, validation_frame = valid)
 print(loans_model)
 
@@ -38,7 +38,7 @@ loans_model = H2OGradientBoostingEstimator(score_each_iteration = True,
                                            ntrees = 100,
                                            max_depth = 5,
                                            learn_rate = 0.05,
-                                           model_id = "InterestRateModel")
+                                           model_id = "LoanInterestRateModel")
 loans_model.train(x = X, y = Y, training_frame = train, validation_frame = valid)
 print(loans_model)
 
