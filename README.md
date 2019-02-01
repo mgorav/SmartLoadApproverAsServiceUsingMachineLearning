@@ -1,5 +1,19 @@
 # Smart Application - Loan Approver Using Spring BOOT and ML
 
+
+At Gonnect we believe in building architecture/platform which has deep learning using neural network at its core. Application build using such architecture are called "Smart Applications". In simple terminology, such application learns from data. As a demonstration checkout a GitHub project which builds a banking loan approval application. The goal of this application is to approve loan and provide interest rate. The loan approval & interest calculation is achieved using "Gradient Boost Models" - Binary, Classification & Regression based on dataset. Following are the key features demonstrated in application:
+1. ML as a s using Spring Boot. 
+2. Dockerize ML model + REST API
+3. Polygot programming model. Loan Approver model & interest calculation is written in Python/R
+4. The model is stored as POJO. NOTE: This is really interesting & unique as most example provided by Spring team via Spring Data Flow uses PMML model
+
+This approach provides ability to rollout new versions of the ML model after performing A/B testing.  This style of architecture:
+
+1. Empower data scientist to use language (Python or R) & framework of their choice
+2. Provides ease of production deployment because of dokerization
+3. Provides ease of integrations of ML model is exposed as REST API
+
+
 Smart applications are those that learns from data. A Loan Approver is smart application which will use ML for loan approving. Learning from the data is achieved using two predictive model:
 
 - Find whether loan being predicted is atrocious  (yes/no)
