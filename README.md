@@ -92,7 +92,7 @@ Following picture shows flow of this smart loan approver application:
 
 ## Tech Stack
 - Build: Gradle
-- ML: Python/R, H2o
+- ML: Python/R, H2o, Six
 - REST API: Java, Spring Boot
 
 ## Play Time
