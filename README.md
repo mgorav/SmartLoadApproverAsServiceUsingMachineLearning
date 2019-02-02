@@ -6,7 +6,7 @@ At Gonnect we believe in building architecture/platform which has deep learning 
 
 As a demonstration checkout a GitHub project which builds a banking loan approval application. The goal of this application is to approve loan and provide interest rate. The loan approval & interest calculation is achieved using "Gradient Boost Models" - Binary, Classification & Regression based on dataset. Following are the key features demonstrated in application:
 
-1. ML as a s using Spring Boot. 
+1. ML as a service using Spring Boot. 
 2. Dockerize ML model + REST API
 3. Polygot programming model. Loan Approver model & interest calculation is written in Python/R
 4. The model is stored as POJO. 
