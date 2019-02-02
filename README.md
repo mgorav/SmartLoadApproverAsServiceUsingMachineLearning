@@ -75,7 +75,7 @@ This will achieved in following steps:
 
 Following picture shows flow of this smart loan approver application:
 
-![alt text](./LoanFlowPath.png)
+![alt text](./LoanApproverApplicationFlow.png)
 
 ## Model Information
 
