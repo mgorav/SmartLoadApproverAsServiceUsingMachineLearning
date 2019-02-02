@@ -12,9 +12,9 @@ As a demonstration checkout a GitHub project which builds a banking loan approva
 
 NOTE: This is really interesting & unique as most example provided by Spring team via Spring Data Flow uses PMML model/TensorFlow. Spring BOOT is the framework of choice for building REST API. The new kid on block in Spring family for data pipeline orchestration is Spring Data Flow.
 
-Deployment of ML As Service discussions in many enterprises reminds me of a famous dialogue from Star Trek - " where no man has gone before" :-)
+Deployment of ML As a Service discussions in many enterprises reminds me of a famous dialogue from Star Trek - " where no man has gone before" :-)
 
- Well it's not that an impossible task as it may perceived at first glance. The below example is the testimony of it.
+ Well it's not that an impossible task as it may be perceived at first glance. The below example is the testimony of it.
 
 Further this approach provides ability to rollout new versions of the ML model after performing A/B testing.  This style of architecture:
 
