@@ -1,17 +1,34 @@
 # Smart Application - Loan Approver Using Spring BOOT and ML
 
 
-At Gonnect we believe in building architecture/platform which has deep learning using neural network at its core. Application build using such architecture are called "Smart Applications". In simple terminology, such application learns from data. As a demonstration checkout a GitHub project which builds a banking loan approval application. The goal of this application is to approve loan and provide interest rate. The loan approval & interest calculation is achieved using "Gradient Boost Models" - Binary, Classification & Regression based on dataset. Following are the key features demonstrated in application:
+At Gonnect we believe in building architecture/platform which has deep learning using neural network at its core. Application build using such architecture are called "Smart Applications". In simple terminology, such application learns from data. 
+
+As a demonstration checkout a GitHub project which builds a banking loan approval application. The goal of this application is to approve loan and provide interest rate. The loan approval & interest calculation is achieved using "Gradient Boost Models" - Binary, Classification & Regression based on dataset. Following are the key features demonstrated in application:
+
 1. ML as a s using Spring Boot. 
 2. Dockerize ML model + REST API
 3. Polygot programming model. Loan Approver model & interest calculation is written in Python/R
-4. The model is stored as POJO. NOTE: This is really interesting & unique as most example provided by Spring team via Spring Data Flow uses PMML model
+4. The model is stored as POJO. 
 
-This approach provides ability to rollout new versions of the ML model after performing A/B testing.  This style of architecture:
+NOTE: This is really interesting & unique as most example provided by Spring team via Spring Data Flow uses PMML model/TensorFlow. Spring BOOT is the framework of choice for building REST API. The new kid on block in Spring family for data pipeline orchestration is Spring Data Flow.
+
+Deployment of ML As Service discussions in many enterprises reminds me of a famous dialogue from Star Trek - " where no man has gone before" :-)
+
+ Well it's not that an impossible task as it may perceived at first glance. The below example is the testimony of it.
+
+Further this approach provides ability to rollout new versions of the ML model after performing A/B testing.  This style of architecture:
 
 1. Empower data scientist to use language (Python or R) & framework of their choice
 2. Provides ease of production deployment because of dokerization
 3. Provides ease of integrations of ML model is exposed as REST API
+
+The power of ML model can only be achieved if they are part of the applications and hence making application smarter. Data which is the real asset of an organisation will unlock its potential using such architecture. This example also demonstrates how ML model can be applied in rule based use cases.
+
+Other uses cases where such architecture style plays important part are:
+1. Health insurance fraud detection
+2. ePayment card fraud detection
+3. Retail (eCommerce) for predicting buy plans with ship plan with inventory stock in hand to enhance best use of the stock in hand
+4. .......
 
 
 Smart applications are those that learns from data. A Loan Approver is smart application which will use ML for loan approving. Learning from the data is achieved using two predictive model:
