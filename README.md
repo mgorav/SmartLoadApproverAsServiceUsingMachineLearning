@@ -95,6 +95,8 @@ Following picture shows flow of this smart loan approver application:
 - ML: Python/R, H2o, Six
 - REST API: Java, Spring Boot
 
+NOTE: Create a virtual env and install Python 3.6+, H2o and Six modules before running the build scripts
+
 ## Play Time
 - Build project
     ```
