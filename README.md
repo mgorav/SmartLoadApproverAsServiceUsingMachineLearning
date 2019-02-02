@@ -1,6 +1,6 @@
 # Smart Application - Loan Approver Using Spring BOOT and ML
 
-## Overview
+## Introduction
 
 At Gonnect we believe in building architecture/platform which has deep learning using neural network at its core. Application build using such architecture are called "Smart Applications". In simple terminology, such application learns from data. 
 
