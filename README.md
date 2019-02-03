@@ -117,11 +117,13 @@ NOTE: Create a virtual env and install Python 3.6+, H2o and Six modules before r
         
         1. build docker image 
             
-             docker build loanapprover .
+             docker build -t loanapprover .
             
         2. build docker image 
             
              docker run loanapprover 
+             
+![alt text](./LoanApproverDocker.png)
             
 
 -  Swagger Definition of the Load Approver application
