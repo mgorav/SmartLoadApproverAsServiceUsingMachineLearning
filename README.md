@@ -60,7 +60,7 @@ This will achieved in following steps:
 | purpose                          | Purpose for the loan                        |  categorical |
 | addr_state                       | State of residence                          |  categorical |
 | dti                              | Debt to income ratio                        |  %           |
-| delinq_2yrs                      | Number of delinquencies in the past 2 years |  integer     |
+| delinq_2yrs                      | Number of misdemeanor in the past 2 years |  integer     |
 | revol_util                       | Revolving credit line utilized              |  %           |
 | total_acc                        | Total accounts (number of credit lines)     |  integer     |
 | longest_credit_length            | Age of oldest active account                |  years       |
