@@ -152,7 +152,7 @@ NOTE: Create a virtual env and install Python 3.6+, H2o and Six modules before r
 
 - Download h2o-genmodel.jar and store it in lib folder
     ```
-    curl http://192.168.1.20:54321/3/h2o-genmodel.jar > h2o-genmodel.jar
+    curl http://localost:54321/3/h2o-genmodel.jar > h2o-genmodel.jar
     ```
 - ML model can be visualized in H2o UI as shown below:
 ![alt text](./h2o.png)
