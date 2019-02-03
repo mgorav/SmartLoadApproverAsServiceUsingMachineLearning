@@ -2,7 +2,7 @@
 
 ## Introduction
 
-At Gonnect we believe in building architecture/platform which has deep learning using neural network at its core. Application build using such architecture are called "Smart Applications". In simple terminology, such application learns from data. 
+At [Gonnect](https://gonnect.org) we believe in building architecture/platform which has deep learning using neural network at its core. Application build using such architecture are called "Smart Applications". In simple terminology, such application learns from data. 
 
 As a demonstration checkout a GitHub project which builds a banking loan approval application. The goal of this application is to approve loan and provide interest rate. The loan approval & interest calculation is achieved using "Gradient Boost Models" - Binary, Classification & Regression based on dataset. Following are the key features demonstrated in application:
 
