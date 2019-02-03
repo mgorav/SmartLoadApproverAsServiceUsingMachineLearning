@@ -65,6 +65,7 @@ This will achieved in following steps:
 | total_acc                        | Total accounts (number of credit lines)     |  integer     |
 | longest_credit_length            | Age of oldest active account                |  years       |
 
+Following are the dependent variables of the Loan Approver:
  
  Dependent Variable                | Description                                 | Model Category         |
 |----------------------------------|---------------------------------------------|------------------------|
