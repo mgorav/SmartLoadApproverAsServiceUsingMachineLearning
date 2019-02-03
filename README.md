@@ -112,7 +112,7 @@ NOTE: Create a virtual env and install Python 3.6+, H2o and Six modules before r
      java -jar loanapprover-0.0.1-SNAPSHOT.jar
     ```
     
-    Alternatively, Docker container can be launched as shown below:
+    Alternatively, once loanapprover-0.0.1-SNAPSHOT.jar is build, docker container can be launched as shown below:
         
         1. build docker image 
             
