@@ -13,7 +13,7 @@ As a demonstration checkout a GitHub project which builds a banking loan approva
 
 NOTE: This is really interesting & unique as most example provided by Spring team via Spring Data Flow uses PMML model/TensorFlow. Spring BOOT is the framework of choice for building REST API. The new kid on block in Spring family for data pipeline orchestration is Spring Data Flow.
 
-Deployment challenges of ML As a Service discussions in many enterprises can be summarized by a famous dialogue from Star Trek - " where no man has gone before" :-)
+Deployment challenges of ML As a Service discussions in many enterprises can be summarized by a famous dialogue from Star Trek - **_"where no man has gone before" :-)_**
 
  Well it's not that an impossible task as it may be perceived at first glance. The “Loan Approver” app (ref Architecture) below is the testimony of it.
 
