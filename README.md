@@ -43,9 +43,9 @@ This will achieved in following steps:
 - Step 1: Create a model which will answer the question.
 - Step 2: Find data which will help in creating the model
 - Step 3: Once the model is created, it will be exported as Java POJO
-- Step 4: Then the compile the Java based model using Gradle
+- Step 4: Then compile the Java based model using Gradle
 - Step 5: Deploy this model on Spring Boot (Tomcat)
-- Step 6: Expose answer to the question as REST API and also self contained Swagger UI
+- Step 6: Expose answer to the questions as REST API with dependent variables and also self contained Swagger UI
 
 ## Data Model
 
