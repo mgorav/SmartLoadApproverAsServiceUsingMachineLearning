@@ -1,4 +1,4 @@
-# Smart Application - Loan Approver Using Spring BOOT and H2O AutoML [Rule Based To  ML Based Loan Approveing]
+# Smart Application - Loan Approver Using Spring BOOT and H2O AutoML [Rule Based To  ML Based Loan Approving]
 
 ## Introduction
 
