@@ -47,9 +47,9 @@ This will achieved in following steps:
 - Step 5: Deploy this model on Spring Boot (Tomcat)
 - Step 6: Expose answer to the questions as REST API with dependent variables and also self contained Swagger UI
 
-## Data Model
+## Machine Learning Data Model
 
-| Predictor/Independent Variable   | Description                                 | Units        |
+|**Predictor/Independent Variable**|**Description**                              | Units        |
 |----------------------------------|---------------------------------------------|--------------|
 | loan_amnt                        | Requested loan amount                       |  US dollars  |
 | term                             | Loan term length                            |  months      |
@@ -67,7 +67,7 @@ This will achieved in following steps:
 
 Following are the dependent variables of the Loan Approver:
  
- Dependent Variable                | Description                                 | Model Category         |
+ **Dependent Variable**            | **Description**                             | Model Category         |
 |----------------------------------|---------------------------------------------|------------------------|
 | bad_loan                         | Is the loan like to be bad? => approved?    | Binomial Classification|
 | int_rate                         | Predicted loan rate                         | Regression             |
