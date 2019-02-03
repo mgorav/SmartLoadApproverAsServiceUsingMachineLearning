@@ -49,7 +49,7 @@ This will achieved in following steps:
 
 ## Data Model
 
-| Predictor Variable               | Description                                 | Units        |
+| Predictor/Independent Variable   | Description                                 | Units        |
 |----------------------------------|---------------------------------------------|--------------|
 | loan_amnt                        | Requested loan amount                       |  US dollars  |
 | term                             | Loan term length                            |  months      |
